@@ -25,3 +25,13 @@ We would love to receive your contributions! Whether you have ideas for improvem
 3. Start organizing your tasks!
 
 ---
+
+Images of the Project v.1.0.0
+
+
+<img width="725" alt="image" src="https://github.com/spichard0/CheckList/assets/59856435/11c10b12-2590-48f1-86b9-a1c4722baf04">
+
+
+
+
+
