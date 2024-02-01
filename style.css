@@ -1,0 +1,153 @@
+
+/* Reset de estilos para eliminar márgenes y padding por defecto en el body */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #88c1e7, #6bb9f0);
+}
+
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado */
+h2 {
+    color: #007bff;
+}
+
+/* Estilos para el área de ingreso de elementos */
+#itemInput {
+    width: calc(100% - 20px); /* Ajustar el ancho teniendo en cuenta el padding */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: none;
+
+}
+
+/* Estilos para el botón de agregar elemento */
+#addItem {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Agregar espacio entre el botón y la lista */
+}
+
+#addItem:hover {
+    background-color: #2a720b;
+    transform: translate3d(0, -5px, 0);
+    transition: transform 0.3s ease;
+}
+
+#deleteAll {
+    background-color: #e21616;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Agregar espacio entre el botón y la lista */
+
+}
+
+#deleteAll:hover {
+    background-color: #5e0707;
+    transform: translate3d(0, -5px, 0);
+    transition: transform 0.3s ease;
+}
+
+#githubLogo {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Agregar espacio entre el botón y la lista */
+
+}
+
+#githubLogo:hover {
+    transform: translate3d(0, -5px, 0);
+    transition: transform 0.3s ease;
+}
+
+
+/* Estilos para la lista de elementos */
+#checklist {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px; /* Agregar espacio entre el botón y la lista */
+}
+
+/* Estilos para los elementos de la lista */
+#checklist li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Estilo para el área de la lista cuando está vacía */
+#checklist:empty::before {
+    content: "No items yet.";
+    color: #868e96;
+    font-style: italic;
+}
+
+/* Estilos para el encabezado */
+.title {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Animación 3D al pasar el mouse */
+.title:hover {
+    transform: translate3d(0, -5px, 0);
+    transition: transform 0.3s ease;
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

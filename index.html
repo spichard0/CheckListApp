@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CheckList</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="title">Checklist</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <textarea id="itemInput" class="form-control"></textarea>
+                <button id="addItem" class="btn btn-primary">Add Item</button>
+                <button id="deleteAll" class="btn btn-danger">Delete All</button>
+                <div>
+                    <a href="https://github.com/tu-usuario/tu-proyecto" target="_blank">
+                        <img id="githubLogo" src="githublogo.png" alt="GitHub Logo" class="github-logo" />
+                    </a>
+                </div>
+                <ul id="checklist">
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="checklist.js"></script>
+</body>
+</html>
