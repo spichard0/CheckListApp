@@ -43,6 +43,8 @@ Details:
 4. Responsive design has been configured. The app will work properly even if you open it from your mobile device or tablet.
 5. Visual elements remain unchanged.
 
+<img width="725" alt="image" src="checklist-v.1.1.png">
+
 
 
 
