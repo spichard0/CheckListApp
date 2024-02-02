@@ -20,13 +20,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom right, #88c1e7, #6bb9f0);
+    background: linear-gradient(to bottom right, #e2e8ec, #f1f2f2);
 }
 
 
 /* Estilos para el contenedor principal */
 .container {
-    max-width: 800px;
+    max-width: 100%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -35,12 +35,14 @@ body {
 
 /* Estilos para el encabezado */
 h2 {
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px;
     color: #007bff;
 }
 
 /* Estilos para el área de ingreso de elementos */
 #itemInput {
-    width: calc(100% - 20px); /* Ajustar el ancho teniendo en cuenta el padding */
+    width: 100%; /* Ajustar el ancho teniendo en cuenta el padding */   /* Hacer que el área de texto sea del 100% del ancho del contenedor */
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
@@ -57,6 +59,7 @@ h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-right: 5px; /* Agregar espacio entre el botón y la lista */
+    
 }
 
 #addItem:hover {
@@ -88,7 +91,7 @@ h2 {
     padding: 10px;
     border: none;
     cursor: pointer;
-    display: flex;
+    
     align-content: center;
     transition: background-color 0.3s ease;
     margin-right: 5px; /* Agregar espacio entre el botón y la lista */
@@ -121,6 +124,11 @@ h2 {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s ease forwards;
+    cursor: pointer; /* Hacer el elemento de la lista clickeable */
+}
+
+#checklist li.checked {
+    text-decoration: line-through;
 }
 
 /* Estilo para el área de la lista cuando está vacía */
@@ -143,6 +151,38 @@ h2 {
     transition: transform 0.3s ease;
 }
 
+/* Estilo para el contenedor del botón de cambio de modo */
+.mode-toggle-container {
+    position: fixed;
+    right: 10px;
+    top: 10px; /* Ajustar la posición a la esquina superior derecha */
+    cursor: pointer;
+}
+
+#modeToggle {
+    width: 50px; /* Ajustar el tamaño de la imagen de la luna */
+    height: auto; /* Mantener la proporción original */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background: linear-gradient(to bottom right, #2c3e50, #34495e);
+    color: #ecf0f1;
+    transition: background-color 0.5s ease; /* Agregar transición suave al fondo del body */
+}
+
+body.dark-mode #modeToggle {
+    content: url('sol.png'); /* Cambiar la imagen al modo oscuro */
+}
+
+body.dark-mode #checklist li {
+    color: #000;
+}
+
+
+
+
+
 /* Animación de entrada */
 @keyframes fadeInUp {
     to {
@@ -151,3 +191,9 @@ h2 {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+}

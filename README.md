@@ -26,10 +26,24 @@ We would love to receive your contributions! Whether you have ideas for improvem
 
 ---
 
-Images of the Project v.1.0.0
+Images of the Project v.1.0
 
 
 <img width="725" alt="image" src="https://github.com/spichard0/CheckList/assets/59856435/11c10b12-2590-48f1-86b9-a1c4722baf04">
+
+---
+
+**Project Update V.1.1**
+
+Details:
+
+1. Bugs in the GitHub button have been fixed.
+2. Added the option to strike through an item by clicking on it.
+3. Dark mode has been implemented.
+4. Responsive design has been configured. The app will work properly even if you open it from your mobile device or tablet.
+5. Visual elements remain unchanged.
+
+
 
 
 
